@@ -1,10 +1,10 @@
 {
   "award_probability": {
-    "Thanks for participating": 0,
-    "Third Prize": 0,
-    "Second Prize": 0,
-    "First Prize": 0.4116529405661157,
-    "Grand Prize": 0.5883470594338843
+    "Thanks for participating": 0.6,
+    "Third Prize": 0.25,
+    "Second Prize": 0.1,
+    "First Prize": 0.04,
+    "Grand Prize": 0.01
   },
   "award_received": {
     "Thanks for participating": 0,
