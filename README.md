@@ -7,6 +7,7 @@ gacha_state.json: persist the program's state (e.g. current probabilities and aw
 
 Usage:
 1) Individualize your awards pool and probability in configuration part of gacha_system.py
-2) Enter the number of pulls in gacha_state.json
-3) Run gacha_system.py
-4) Check your received awards in gacha_state.json
+2) If you chhoose to finish 1), delete gacha_state.json and run gacha_system.py to create corresponding gacha_state.json.
+3) Enter the number of pulls in gacha_state.json
+4) Run gacha_system.py
+5) Check your received awards in gacha_state.json
