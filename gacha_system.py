@@ -18,6 +18,7 @@ big_awards = ['First Prize', 'Grand Prize']
 # Set up the defaultdict with all initial keys and value 0
 award_received = defaultdict(int, {key: 0 for key in initial_award_probability})
 init_state = {'award_probability': initial_award_probability, 'award_received': award_received, 'pull_count': 0}
+initialize_system = False
 
 # Load state from json file
 def load_state(file):
@@ -68,12 +69,16 @@ def main():
     os.chdir(script_dir)
     # Load state from json file under the same folder
     state = load_state(state_file)
-    print(f'Loaded state.')
+    print('Loaded state.')
     # Draw cards!
     draw_award(state)
+    print('Awards received.')
     # Save to json file
+    if initialize_system == True:
+        state = init_state
+        print('Gacha system initialized.')
     save_state(state, state_file)
-    print(f'Updated state.')
+    print('Updated state.')
 
 
 if __name__ == '__main__':
