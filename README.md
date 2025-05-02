@@ -1,5 +1,5 @@
 # self-rewarding-gacha-system
-# pull awards from the pool with pity system
+pull awards from the pool with pity system
 
 
 File:
