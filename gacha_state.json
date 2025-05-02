@@ -1,17 +1,17 @@
 {
   "award_probability": {
-    "Thanks for participating": 0.6,
-    "Third Prize": 0.25,
-    "Second Prize": 0.1,
-    "First Prize": 0.04,
-    "Grand Prize": 0.01
+    "$200 on PC": 0.0012100000000000001,
+    "$20 for musical/script RPG": 0.0024200000000000003,
+    "1 meal under $50": 0.0048400000000000006,
+    "$1 on game": 0.01573,
+    "$0.1 on food": 0.9758
   },
   "award_received": {
-    "Thanks for participating": 0,
-    "Third Prize": 0,
-    "Second Prize": 0,
-    "First Prize": 0,
-    "Grand Prize": 0
+    "$200 on PC": 189,
+    "$20 for musical/script RPG": 385,
+    "1 meal under $50": 667,
+    "$1 on game": 2200,
+    "$0.1 on food": 46559
   },
   "pull_count": 0
 }
