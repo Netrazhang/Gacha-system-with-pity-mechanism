@@ -14,15 +14,17 @@ initial_award_probability = {
     '$0.1 on food': 0
 }
 initial_award_probability['$0.1 on food'] = 1 - sum(initial_award_probability.values())
-
 awards = list(initial_award_probability.keys())
 big_awards = {'$1 on game', '1 meal under $50', '$10 for musical/script RPG', '$100 on PC'}
-# Set up the defaultdict with all initial keys and value 0
 award_received = defaultdict(int, {key: 0 for key in initial_award_probability})
+
+# Set up the initial state of gacha system
 init_state = {'award_probability': initial_award_probability,
               'award_received': award_received,
-              'pull_count': 50000}
-initialize_system = True
+              'pull_count': 0}
+# if we want to adjust probability via Monte Carlo
+Monte_Carlo_test = True
+Monte_Carlo_trial_number = 50000
 
 # Load state from json file
 def load_state(file):
@@ -71,9 +73,10 @@ def main():
     # Load state from json file under the same folder
     state = load_state(state_file)
     print('Loaded state.')
-    if initialize_system == True:
+    if Monte_Carlo_test == True:
         state = copy.deepcopy(init_state)
-        print('Gacha system initialized.')
+        state['pull_count'] = Monte_Carlo_trial_number
+        print('Monte Carlo Trial on.')
     # Draw cards!
     draw_award(state)
     print('Awards received.')

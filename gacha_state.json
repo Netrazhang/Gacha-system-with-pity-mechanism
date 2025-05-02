@@ -1,17 +1,17 @@
 {
   "award_probability": {
-    "$200 on PC": 0.0012100000000000001,
-    "$20 for musical/script RPG": 0.0024200000000000003,
-    "1 meal under $50": 0.0048400000000000006,
-    "$1 on game": 0.01573,
-    "$0.1 on food": 0.9758
+    "$200 on PC": 0.005054470284992944,
+    "$20 for musical/script RPG": 0.010108940569985889,
+    "1 meal under $50": 0.020217881139971777,
+    "$1 on game": 0.06570811370490828,
+    "$0.1 on food": 0.8989105943001411
   },
   "award_received": {
-    "$200 on PC": 189,
-    "$20 for musical/script RPG": 385,
-    "1 meal under $50": 667,
-    "$1 on game": 2200,
-    "$0.1 on food": 46559
+    "$200 on PC": 202,
+    "$20 for musical/script RPG": 366,
+    "1 meal under $50": 695,
+    "$1 on game": 2201,
+    "$0.1 on food": 46536
   },
   "pull_count": 0
 }
